@@ -3,32 +3,7 @@
 <ul>
     <%@cats.each do |cat| %>
         <li><%= cat.name  %></li>
-        <table>
-            <thead>
-                <tr>
-                    <th colspan="2"><%= cat.name %></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>color</td>
-                    <td><%= cat.color %></td>
-                </tr>
-                <tr>
-                    <td>Birthdate</td>
-                    <td><%= cat.birth_date %></td>
-                </tr>
-                <tr>
-                    <td>Sex</td>
-                    <td><%= cat.sex%></td>
-                </tr>
-                <tr>
-                    <td>Description</td>
-                    <td><%= cat.description %></td>
-                </tr>
-
-            </tbody>
-        </table>
+        <a href= "<%= cat_url(cat.id)%>"> Pick Me! 🐱 </a>
 
     <%end %>
 </ul>

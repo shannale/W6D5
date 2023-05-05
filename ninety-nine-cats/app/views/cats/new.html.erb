@@ -1,0 +1,28 @@
+<h2> GIVE AWAY YOUR CAT TODAY 👹</h2>
+<form action=cats_url method="post"> 
+    <label for="name">Name:</label>
+    <input id="name" type="text" name="name" value="<%= @cat.name %>">
+   <%=  %>
+
+    <div> 
+        <label for="sex">Sex:</label>
+
+        <label for="M">Male</label>
+        <input id="M" type="radio" name="sex" value="<%= @cat.sex %>">
+
+        <label for="F">Female</label>
+        <input id="F" type="radio" name="sex" value="<%= @cat.sex %>">
+    </div>
+
+
+    <label for="birthday">Birthday:</label>
+    <input id="birthday" type="date" name="birthday" value="<%= @cat.birth_date %>">
+
+    <label for="color">Color:</label>
+
+        <select name="color" id="color"></select>
+        <option value="<%=@cat.color %>"> </option>
+
+    <input type="submit" value="Are You Sure?"> 
+</form>
+
